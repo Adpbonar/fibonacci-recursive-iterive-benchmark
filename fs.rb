@@ -17,7 +17,7 @@ def iterative_fib(num)
     num1 = num2
     num2 = x + num2
   end
-return num1
+  return num1
 end
 
 puts "Benchmark number 35"
