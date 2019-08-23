@@ -1,11 +1,8 @@
 # Recursive Fibonacci Sequence
 
 def recursive_fib(num)
-  if num <= 1
-    return  num  
-  else
-    recursive_fib(num - 1) + recursive_fib(num - 2)
-  end
+  return  num if num <= 1  
+  recursive_fib(num - 1) + recursive_fib(num - 2)
 end 
 
 #########################################################################
@@ -23,6 +20,7 @@ def iterative_fib(num)
 return num1
 end
 
+puts "Benchmark number 35"
 num = gets.chomp.to_i
 puts "Recursive Fibonacci Sequence"
 puts recursive_fib(num)
